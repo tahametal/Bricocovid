@@ -1,0 +1,7 @@
+{
+  "name": "Bricocovid",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "ionic-angular"
+}
