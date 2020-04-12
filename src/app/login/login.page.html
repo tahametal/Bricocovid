@@ -1,0 +1,37 @@
+<ion-content class="login-content" padding>
+
+  <ion-row>
+    <ion-col>
+      <h1 class="logo">Bricovid</h1>
+      <p class="description">This app helps you get your Job quickly.</p>
+    </ion-col>
+  </ion-row>
+
+  <form #form="ngForm" (ngSubmit)="login(form)">
+      <ion-row color="primary" justify-content-center>
+        <ion-col>
+          <div padding>
+            <ion-item>
+              <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="password" type="password" placeholder="Password" ngModel required></ion-input>
+            </ion-item>
+          </div>
+          <div padding>
+            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block">Login</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+  </form>
+
+  <ion-row>
+    <ion-col>
+      <ion-button class="log-in-button" color="primary" expand="block" (click)="doFbLogin()">
+        LOG IN WITH FACEBOOK
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+
